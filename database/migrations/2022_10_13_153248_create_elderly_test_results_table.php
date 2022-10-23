@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('elderly_test_results', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')
+            $table->foreignId('elder_info_id')
             ->constrained()
             ->onUpdate('cascade')
             ->onDelete('cascade');

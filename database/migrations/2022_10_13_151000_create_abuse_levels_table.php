@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('abuse_levels', function (Blueprint $table) {
             $table->id();
-            $table->string('abuse_level_id');
+            $table->string('abuse_level');
             $table->timestamps();
         });
     }

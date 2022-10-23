@@ -19,6 +19,10 @@ return new class extends Migration
             ->constrained()
             ->onUpdate('cascade')
             ->onDelete('cascade');
+            $table->foreignId('elder_info_id')
+            ->constrained()
+            ->onUpdate('cascade')
+            ->onDelete('cascade');
             $table->integer('take');
             $table->enum('status', [0,1])->default(0);
             $table->timestamps();
